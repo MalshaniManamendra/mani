@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AF Lecture</title>
+</head>
+<body>
+
+<script>
+    function Vehicle(){
+
+        this.type='Toyota';
+        // this.getType=function(){
+        //     return this.type;
+        // }
+    }
+
+    Vehicle.prototype.getType=function(){
+        return this.type;
+    };
+
+    var vehicle = new Vehicle();
+    console.log(vehicle.getType());
+
+    console.log(vehicle);
+
+</script>
+</body>
+</html>
